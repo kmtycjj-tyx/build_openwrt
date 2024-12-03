@@ -13,7 +13,7 @@ wait
 
 # 修改默认 IP 为 192.168.1.99
 sed -i 's/ '\''dhcp'\''//' openwrt/target/linux/amlogic/base-files/etc/board.d/02_network
-sed -i 's/192.168.100.1/192.168.1.99/g' openwrt/package/istoreos-files/Makefile
+sed -i 's/192.168.100.1/192.168.2.254/g' openwrt/package/istoreos-files/Makefile
 # 调整分区
 sed -i 's/2812/1788/' openwrt/target/linux/amlogic/meson/base-files/usr/sbin/install-to-emmc.sh
 # 取消 argon 默认主题
